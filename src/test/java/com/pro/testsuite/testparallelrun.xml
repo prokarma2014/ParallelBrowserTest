@@ -1,0 +1,102 @@
+<suite name="test parallel run" parallel="tests">
+  
+  
+    <test name="IE Submit Response Test">
+	 <parameter name="browser" value="ie" />
+	 <classes>
+       <class name="com.pro.test.TestRun">
+        <methods>
+        <include name="testPositiveSubmit" />
+      </methods>
+       </class>
+    </classes>
+	 </test>
+ 
+	 <test name="Firefox Submit Response Test">
+	 <parameter name="browser" value="firefox" />
+	 <classes>
+       <class name="com.pro.test.TestRun">
+        <methods>
+        <include name="testPositiveSubmit" />
+      </methods>
+       </class>
+    </classes>
+	 </test>
+	 
+	  <test name="Firefox Submit Validation Test">
+	 <parameter name="browser" value="firefox" />
+	 <classes>
+       <class name="com.pro.test.TestRun">
+        <methods>
+        <include name="testNegativeSubmit" />
+      </methods>
+       </class>
+    </classes>
+	 </test>
+	
+	 <test name="Firefox topUp Validation Test">
+	 <parameter name="browser" value="firefox" />
+	 <classes>
+       <class name="com.pro.test.TestRun">
+        <methods>
+        <include name="testTopUp" />
+        </methods>
+       </class>
+    </classes>
+	 </test>
+	 
+	  <test name="Firefox topUp terms Alert Test">
+	 <parameter name="browser" value="firefox" />
+	 <classes>
+       <class name="com.pro.test.TestRun">
+        <methods>
+        <include name="testTopUpWithoutAccept" />
+        </methods>
+       </class>
+    </classes>
+	 </test>
+	 
+	   <test name="Chrome topUp terms Alert Test">
+	 <parameter name="browser" value="chrome" />
+	 <classes>
+       <class name="com.pro.test.TestRun">
+        <methods>
+        <include name="testTopUpWithoutAccept" />
+        </methods>
+       </class>
+    </classes>
+	 </test>
+	 
+	  <test name="Chrome topUp Validation Test">
+	 <parameter name="browser" value="chrome" />
+	 <classes>
+       <class name="com.pro.test.TestRun">
+        <methods>
+        <include name="testTopUp" />
+        </methods>
+       </class>
+    </classes>
+	 </test>
+	 <test name="Chrome Submit Response Flow Test">
+	 <parameter name="browser" value="chrome" />
+	 <classes>
+       <class name="com.pro.test.TestRun">
+        <methods>
+        <include name="testPositiveSubmit" />
+      </methods>
+       </class>
+    </classes>
+	 </test>
+	 
+	  <test name="Chrome Submit Validation Test">
+	 <parameter name="browser" value="chrome" />
+	 <classes>
+       <class name="com.pro.test.TestRun">
+        <methods>
+        <include name="testNegativeSubmit"/>
+      </methods>
+       </class>
+    </classes>
+	 </test>
+
+</suite>
