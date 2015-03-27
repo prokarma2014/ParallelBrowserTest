@@ -1,7 +1,7 @@
 <suite name="test parallel run" parallel="tests">
   
   
-    <test name="IE Submit Response Test">
+    <!--<test name="IE Submit Response Test">
 	 <parameter name="browser" value="ie" />
 	 <classes>
        <class name="com.pro.test.TestRun">
@@ -10,7 +10,7 @@
       </methods>
        </class>
     </classes>
-	 </test>
+    </test>-->
  
 	 <test name="Firefox Submit Response Test">
 	 <parameter name="browser" value="firefox" />
@@ -56,7 +56,7 @@
     </classes>
 	 </test>
 	 
-	   <test name="Chrome topUp terms Alert Test">
+	<!--   <test name="Chrome topUp terms Alert Test">
 	 <parameter name="browser" value="chrome" />
 	 <classes>
        <class name="com.pro.test.TestRun">
@@ -97,6 +97,6 @@
       </methods>
        </class>
     </classes>
-	 </test>
+	 </test>-->
 
 </suite>
